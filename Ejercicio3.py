@@ -1,7 +1,7 @@
 
 
 
-#3. numero entero diferente de 0 y muestre sus divisores
+#3. numero entero diferente de 0 y muestre sus divisores..
 numero = 0
 while numero == 0:
     try:
