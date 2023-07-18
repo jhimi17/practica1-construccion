@@ -1,20 +1,18 @@
 
-
-
 #3. numero entero diferente de 0 y muestre sus divisores..
-numero = 0
-while numero == 0:
-    try:
-        numero = int(input("Ingrese un número diferente de cero: "))
-        if numero == 0:
-            print("El número debe ser diferente de cero. Inténtelo nuevamente.")
-    except ValueError:
-        print("Error: Debe ingresar un número entero. Inténtelo nuevamente.")
+numero = int(input("Ingrese un número entero diferente de 0: "))
+
+# Validar que el número sea diferente de cero
+while numero == 0 :
+    numero = int(input("El número debe ser diferente de 0. Ingrese otro número: "))
 
 divisores = []
 
-for i in range(1, numero + 1):
+# Encontrar los divisores del número
+
+for i in range(1, abs(numero) + 1):
     if numero % i == 0:
         divisores.append(i)
 
+# Mostrar los divisores encontrados
 print("Los divisores de", numero, "son:", divisores)
